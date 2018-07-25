@@ -1,0 +1,14 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^adminshop/(.*) /wp-admin/$1 [QSA,L]
+RewriteRule ^adminshop(.*) /wp-admin/$1 [QSA,L]
+RewriteRule ^dang_nhap(.*) /wp-login.php$1 [QSA,L]
+RewriteRule ^dang_nhap/(.*) /wp-login.php$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
