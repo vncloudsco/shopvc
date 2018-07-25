@@ -1,0 +1,10 @@
+2018-07-17T06:27:38+00:00 CRITICAL Call to a member function get_id() on null
+
+2018-07-17T07:23:24+00:00 CRITICAL Call to a member function get_id() on null
+
+2018-07-17T11:43:09+00:00 CRITICAL Cannot redeclare enque_script_fun() (previously declared in /home/vnclouds/shop.vnclouds.co/wp-content/plugins/woo-awesome-checkout-popup-form/checkout-popup.php:22)
+
+2018-07-17T11:43:11+00:00 CRITICAL Cannot redeclare enque_script_fun() (previously declared in /home/vnclouds/shop.vnclouds.co/wp-content/plugins/woo-awesome-checkout-popup-form/checkout-popup.php:22)
+
+2018-07-17T11:43:11+00:00 CRITICAL Cannot redeclare enque_script_fun() (previously declared in /home/vnclouds/shop.vnclouds.co/wp-content/plugins/woo-awesome-checkout-popup-form/checkout-popup.php:22)
+
