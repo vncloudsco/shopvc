@@ -1,0 +1,12 @@
+# Disable access to all file types except the following
+
+Order deny,allow
+
+Deny from all
+
+<Files ~ ".(jpe?g|png|gif)$">
+
+Allow from 127.0.0.1
+
+</Files>
+
