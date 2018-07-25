@@ -1,0 +1,168 @@
+/*------------------------------------------------------------------
+[WooCommerce Warranties and Returns WARRANTY.CSS - Admin]
+
+[Table of contents]
+
+1. Settings
+2. WC Order
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[WCWAR Settings]
+-------------------------------------------------------------------*/
+
+.wcwar_warranty {
+	margin:20px 0;
+	line-height:28px;
+}
+	.wcwar_warranty form p {
+		margin-bottom:20px;
+	}
+	.wcwar_warranty strong {
+		display:block;
+	}
+	.wcwar_warranty .wcwar_required {
+		margin-left:6px;
+		padding:0 2px;
+		border-radius:3px;
+		font-size:10px;
+		font-weight:normal;
+		vertical-align:super;
+		color:#fff;
+		background-color:#e43d1d;
+	}
+	.wcwar_warranty label {
+		line-height:28px;
+		cursor:pointer;
+	}
+	.wcwar_warranty label.single {
+		float:left;
+		display:block;
+		min-width:300px;
+		margin-right:10px;
+	}
+	.wcwar_warranty input,
+	.wcwar_warranty textarea,
+	.wcwar_warranty select {
+		display:block;
+	}
+	.wcwar_warranty input,
+	.wcwar_warranty textarea {
+		min-width:300px;
+	}
+	.wcwar_warranty select {
+		min-width:313px;
+	}
+	.wcwar_warranty input[type="submit"],
+	.wcwar_warranty input[type="radio"],
+	.wcwar_warranty input[type="checkbox"] {
+		min-width:20px;
+		display:inline;
+	}
+	.wcwar_warranty > form > p > small:before {
+		content:'';
+		display:block;
+		width:100%;
+		clear:both;
+	}
+
+.wcwar_warranty .wcwar_warranty_status {
+	padding-bottom:5px;
+	border-bottom:1px solid #ccc;
+	margin-bottom:20px;
+}
+.wcwar_warranty .wcwar_badge_parent > span {
+	margin-right:10px;
+}
+
+
+/*------------------------------------------------------------------
+[WC Order]
+-------------------------------------------------------------------*/
+
+.wcwar_badge {
+	display:inline-block;
+	padding:0 5px;
+	border-radius:3px;
+	color:#fff;
+	font-size:9px;
+	line-height:26px;
+	vertical-align:middle;
+	text-decoration:none;
+	margin-right:3px;
+}
+
+	.wcwar_badge.warranty_new {
+		background-color:#e43d1d;
+	}
+	.wcwar_badge.warranty_processing {
+		background-color:#f2ca0b;
+	}
+	.wcwar_badge.warranty_completed {
+		background-color:#217fbe;
+	}
+	.wcwar_badge.warranty_rejected,
+	.wcwar_badge.warranty_expired {
+		background-color:#dfd8d4;
+		color:inherit;
+	}
+	.wcwar_badge.warranty_only {
+		background-color:#70b5e5;
+	}
+	.wcwar_badge.return_only {
+		background-color:#9bce84;
+	}
+
+#war_comments {
+	
+}
+	#war_comments .war_title {
+		margin-bottom:20px;
+	}
+	#war_comments ol {
+		list-style:none;
+	}
+		#war_comments ol li {
+			list-style:none;
+			margin-bottom:20px;
+		}
+		#war_comments ol li:last-child {
+			margin-bottom:0;
+		}
+		#war_comments ol ol {
+			margin:20px 0;
+		}
+		#war_comments ol ol li {
+			margin-left:20px;
+		}
+		#war_comments ol li .war_comment_body {
+		}
+			#war_comments ol li .war_comment_author {
+				float:left;
+				width:50px;
+				margin-right:20px;
+				font-size:12px;
+				line-height:14px;
+				text-align:center;
+			}
+			#war_comments ol li .war_comment_body {
+				position:relative;
+				background:#f8f8f8;
+				padding:12px 18px;
+				margin-left:70px;
+			}
+				#war_comments ol li .war_comment_body:after {
+					content:'';
+					position:absolute;
+					top:15px;
+					left:-20px;
+					border:10px solid transparent;
+					border-right-color:#f8f8f8;
+				}
+				#war_comments ol li .war_comment_body p {
+					margin-bottom:0;
+				}
+				#war_comments ol li .war_comment_body .war_comment_meta {
+					font-size:12px;
+				}

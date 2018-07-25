@@ -1,0 +1,26 @@
+{
+  "blocks": {
+    "block": [
+      {
+        "name": "HMW_Controllers_Settings",
+        "actions": {
+          "action": [
+            "hmw_settings",
+            "hmw_abort",
+            "hmw_manualrewrite",
+            "hmw_support",
+            "hmw_checkwebsite"
+          ]
+        },
+        "admin": "1",
+        "active": "1"
+      },
+      {
+        "name": "HMW_Controllers_Settings",
+        "actions": { "action": "hmw_logout" },
+        "admin": "0",
+        "active": "1"
+      }
+    ]
+  }
+}

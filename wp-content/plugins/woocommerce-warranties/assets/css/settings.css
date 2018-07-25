@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------
+[WooCommerce Warranties and Returns SETTINGS.CSS - WC Admin Settings]
+
+[Table of contents]
+
+1. Settings Page
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Settings Page]
+-------------------------------------------------------------------*/
+
+#wcwar_formbuilder {
+	position:relative;
+	max-width: 1024px;
+	padding-right: 20px;
+	background-color:#fff;
+}
+	#wcwar_formbuilder li {
+		margin-bottom:0;
+	}
+	#wcwar_formbuilder + table {
+		visibility:hidden;
+		height:0;
+	}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "wcwar";
+  src:url("fonts/wcwar.eot");
+  src:url("fonts/wcwar.svg#wcwar") format("svg"),
+    url("fonts/wcwar.eot?#iefix") format("embedded-opentype"),
+    url("fonts/wcwar.woff") format("woff"),
+    url("fonts/wcwar.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[class^="wcwar-"]:before,
+[class*=" wcwar-"]:before {
+  font-family: "wcwar" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align:middle;
+}
+
+.wcwar-view:before {
+  content: "\f001";
+}
+.wcwar-new:before {
+  content: "\f002";
+}
+.wcwar-change:before {
+  content: "\f003";
+}
+.wcwar-close:before {
+  content: "\f004";
+}
+.wcwar-selected:before {
+  content: "\f005";
+}
+.wcwar-parent:before {
+  content: "\f006";
+}
+.wcwar-order:before {
+  content: "\f007";
+}
+.wcwar-icon:before {
+  content: "\f008";
+}
+.wcwar-check:before {
+  content: "\f009";
+}
+.wcwar-cross:before {
+  content: "\f010";
+}
+.wcwar-info:before {
+  content: "\f011";
+}
+.wcwar-move:before {
+  content: "\f012";
+}
+.wcwar-edit:before {
+  content: "\f013";
+}

@@ -1,0 +1,146 @@
+.androapp-table  {
+	background: #ffffff;
+}
+.androapp-table th {
+	min-width: 50px;
+}
+.androapp-table th .bwp-text {
+	position: absolute;
+	height: 30px;
+	top: 7px;
+	z-index: 2;
+}
+.androapp-table tr {
+	/* position: relative; */
+}
+.androapp-table td, .androapp-table th {
+	padding: 2px 5px;
+	text-align: left;
+}
+.androapp-table td {
+	padding: 4px 5px;
+}
+.androapp-table td input, .androapp-table td input:focus {
+	border: none;
+	background: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.ui-accordion-content{
+	background-color: #FFFFFF;
+	margin-top: -17px;
+	padding: .6em .5em;
+}
+.ui-androapp-step-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 10px;
+	padding: .6em .5em;
+	min-height: 0;
+	font-family: 'helveticaneue-light'
+	font-size: 20px;
+	font-weight: 400;
+	border: 0;
+	outline: 0;
+	line-height: 1.7;
+	text-decoration: none;
+}
+.ui-state-default {
+	background-color: #FFFFFF;
+}
+.ui-state-active {
+	background-color: #298BB9;
+}
+.ui-androapp-step-header span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1.7em;
+	background: #000000;
+	text-align: center;
+	padding: .6em .5em;
+	color: #FFF;
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 62px;
+	padding-right: 40px;
+}
+
+.giveMeEllipsis {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   line-height: 1.2em;        /* fallback */
+   max-height: 2.4em;       /* fallback */
+}
+.androPostImageCompact {
+	width : 75px;
+	height: 75px;
+	float: left;
+	overflow:hidden;
+	background-color: #d3d3d3;
+	margin:5px;
+}
+.androPostImageCardview {
+	width : 100%;
+	float: none;
+	height:auto;
+	overflow:hidden;
+	margin-top:8px;
+}
+.androPostImageSrcCompact{
+	height:75px;
+}
+.androPostImageSrcCardview{
+	height:auto;
+}
+.androPostContentCompact {
+	margin: 0px;
+	text-align:left;
+	font-size:small;
+}
+.androPostContentCardview {
+	text-align:left;
+	margin-left:8px;
+	margin-right:8px;
+	margin-top:1px;
+	margin-bottom:8px;
+	font-size:small;
+}
+.androPostTitleCompact {
+	font-size:mdium;
+	margin:1px;
+}
+.androPostTitleCardview{
+	font-size:large;
+	margin:8px;
+}
+.active{
+	margin:10px;
+	font-size: large;
+    text-decoration: initial;
+}
+.passive{
+	margin:10px;
+	font-size: large;
+    text-decoration: initial;
+}
+.active a{
+	text-decoration: initial;
+}
+pre {
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.form-table th{
+    padding: 20px 10px 20px 10px !important;
+}

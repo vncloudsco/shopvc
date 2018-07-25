@@ -1,0 +1,137 @@
+/*------------------------------------------------------------------
+[WooCommerce Warranties and Returns REQUEST.CSS - Request Page]
+
+[Table of contents]
+
+1. General
+2. Info Boxes
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[1. General]
+-------------------------------------------------------------------*/
+
+.wcwar_warranty {
+	margin:20px 0;
+}
+	.wcwar_warranty form p {
+		margin-bottom:20px;
+	}
+	.wcwar_warranty form p strong {
+		display:block;
+	}
+	.wcwar_warranty .wcwar_required {
+		display: inline-block;
+		vertical-align: super;
+		font-size: 8px;
+		line-height: 11px;
+		color: #fff;
+		background-color: #e85b5b;
+		border-radius: 2px;
+		border: 1px solid rgba(0,0,0,0.167);
+		font-family: sans-serif;
+		font-weight: normal;
+		padding: 1px 3px;
+		margin-left: 5px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.wcwar_warranty label {
+		display:inline-block;
+		line-height:28px;
+		cursor:pointer;
+	}
+	.wcwar_warranty label.single {
+		float:left;
+		display:block;
+		min-width:300px;
+		margin-right:10px;
+	}
+	.wcwar_warranty input,
+	.wcwar_warranty textarea,
+	.wcwar_warranty select {
+		display:block;
+	}
+	.wcwar_warranty input,
+	.wcwar_warranty textarea {
+		min-width:300px;
+	}
+	.wcwar_warranty select {
+		min-width:313px;
+	}
+	.wcwar_warranty input[type="submit"],
+	.wcwar_warranty input[type="radio"],
+	.wcwar_warranty input[type="checkbox"] {
+		min-width:20px;
+		display:inline;
+	}
+	.wcwar_warranty > form > p > small:before {
+		content:'';
+		display:block;
+		width:100%;
+		clear:both;
+	}
+
+.wcwar_warranty .wcwar_item_wrap {
+	display:block;
+}
+
+.wcwar_warranty .wcwar_item_wrap input[name=wcwar_qty] {
+	display:inline-block;
+	margin-left:10px;
+	min-width:100px;
+}
+
+
+/*------------------------------------------------------------------
+[2. Info Boxes]
+-------------------------------------------------------------------*/
+
+.wcwar_info_icon {
+	font-size:18px;
+	margin-right:6px;
+}
+
+.wcwar_form_error {
+	padding:10px;
+	color:#e43d1d;
+	border:1px solid #e43d1d;
+	border-radius:3px;
+	background-color:#fbded9;
+}
+	.wcwar_form_error strong {
+		display:block;
+	}
+	.wcwar_form_error a {
+		color:#e43d1d!important;
+		font-weight:bold!important;
+	}
+
+.wcwar_form_info {
+	padding:10px;
+	color:#217fbe;
+	border:1px solid #217fbe;
+	border-radius:3px;
+	background-color:#d1e9f8;
+}
+	.wcwar_form_info a {
+		color:#217fbe!important;
+		font-weight:bold!important;
+	}
+
+.wcwar_form_success {
+	padding:10px;
+	color:#3f9f44;
+	border:1px solid #3f9f44;
+	border-radius:3px;
+	background-color:#d1edd2;
+}
+	.wcwar_form_success a {
+		color:#3f9f44!important;
+		font-weight:bold!important;
+	}
+
+.wcwar_return_note {
+	display:none;
+}

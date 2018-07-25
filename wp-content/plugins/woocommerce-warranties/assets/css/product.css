@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+[WooCommerce Warranties and Returns PRODUCT.CSS - Single Product Page]
+
+[Table of contents]
+
+1. General
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[1. General]
+-------------------------------------------------------------------*/
+
+.wcwar_fix {
+	clear:both!important;
+	width:100%!important;
+	display:block!important;
+	float:none!important;
+}
+
+.war_warranty:before,
+.war_warranty:after {
+	content:'';
+	display:table;
+	clear:both;
+}
+
+.war_warranty {
+	padding:60px 0 0;
+	clear:both;
+}
+	.war_warranty.war_variable {
+		display:none;
+	}
+	.war_warranty img {
+		margin:10px 0;
+		display:block;
+	}
+	.war_warranty.war_paid p.war_option {
+		display:none;
+	}
+	.war_warranty h3 + p {
+		margin-bottom:20px;
+	}
+	body .war_warranty select {
+		min-width:240px;
+	}

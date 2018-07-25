@@ -1,0 +1,453 @@
+/*------------------------------------------------------------------
+[WooCommerce Warranties and Returns ADMIN.CSS - Admin Styles]
+
+[Table of contents]
+
+1. WC Metabox
+2. WC Order
+3. WCWAR Change Status
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[WC Metabox]
+-------------------------------------------------------------------*/
+
+#wcwar_tab:before,
+#wcwar_tab:after,
+.wcwar_tab:before,
+.wcwar_tab:after {
+	clear:both;
+	display:table;
+	content:'';
+}
+	#wcwar_tab .wcwar_metabox,
+	.wcwar_tab .wcwar_metabox {
+		padding-top:36px;
+		padding-bottom:18px;
+		position:relative;
+		border:1px solid #ccc;
+		border-radius:3px;
+		margin-right:12px;
+		margin-top:10px;
+		background-color:#fff;
+		max-width:800px;
+		padding-left:20px;
+	}
+		#wcwar_tab .wcwar_metabox div,
+		.wcwar_tab .wcwar_metabox div {
+			cursor: auto;
+		}
+		#wcwar_tab .wcwar_metabox > a,
+		.wcwar_tab .wcwar_metabox > a {
+			position:absolute;
+			top:0;
+			right:0;
+			width:48px;
+			height:48px;
+			line-height:48px;
+			font-size:20px;
+			text-align:center;
+			text-decoration:none;
+			color:#222;
+			background-color:#fafafa;
+		}
+			#wcwar_tab .wcwar_metabox > a i:before,
+			.wcwar_tab .wcwar_metabox > a i:before {
+				vertical-align:top;
+			}
+			#wcwar_tab .wcwar_metabox > a:hover,
+			.wcwar_tab .wcwar_metabox > a:hover {
+				color:#fff;
+				background-color:#222;
+			}
+			#wcwar_tab .wcwar_metabox > a.move_paid_warranty,
+			.wcwar_tab .wcwar_metabox > a.move_paid_warranty {
+				right:48px;
+				font-size:24px;
+				cursor:move;
+			}
+
+		#wcwar_tab.woocommerce_variation_panel td,
+		.wcwar_tab.woocommerce_variation_panel td {
+			display:block;
+			width:200% !important;
+		}
+			#wcwar_tab.woocommerce_variation_panel td p,
+			.wcwar_tab.woocommerce_variation_panel td p {
+				margin:0;
+			}
+			#wcwar_tab.woocommerce_variation_panel td input,
+			#wcwar_tab.woocommerce_variation_panel td select,
+			#wcwar_tab.woocommerce_variation_panel td textarea,
+			.wcwar_tab.woocommerce_variation_panel td input,
+			.wcwar_tab.woocommerce_variation_panel td select,
+			.wcwar_tab.woocommerce_variation_panel td textarea {
+				max-width:300px !important;
+				float:none !important;
+				vertical-align:middle;
+			}
+			.wcwar_tab.woocommerce_variation_panel td .short {
+				width:100% !important;
+			}
+			#wcwar_tab.woocommerce_variation_panel td .wcwar_metabox,
+			.wcwar_tab.woocommerce_variation_panel td .wcwar_metabox {
+				padding:12px 18px;
+			}
+
+			.wcwar_tab.woocommerce_variation_panel td label {
+				float: left;
+				width: 200px;
+				padding: 0;
+				vertical-align:middle;
+			}
+			.wcwar_tab.woocommerce_variation_panel .grouping[data-group="included_warranty"] p {
+				margin-bottom:12px;
+			}
+	.wcwar_tab .form-field > em,
+	#wcwar_tab .form-field > em {
+		clear:both;
+		display:block;
+	}
+		.wcwar_tab .form-field.wcwar_qp_without_single > em,
+		#wcwar_tab .form-field.wcwar_qp_without_single > em {
+			display:inline-block;
+			clear:none;
+			margin-left:5px;
+		}
+
+#addtag #wcwar_tab .form-field {
+
+}
+#edittag #wcwar_tab .paid_warranty_items.wcwar_metaboxes,
+#addtag #wcwar_tab .paid_warranty_items.wcwar_metaboxes {
+	padding-left:0;
+}
+#edittag #wcwar_tab .wcwar_metabox {
+	padding-top:36px;
+	padding-bottom:18px;
+}
+#addtag #wcwar_tab .wcwar_metabox {
+	padding-top:36px;
+	padding-bottom:18px;
+}
+
+#edittag .options_group .form-field input,
+#addtag .options_group .form-field input,
+#edittag .options_group .form-field select,
+#addtag .options_group .form-field select,
+#edittag .options_group .form-field textarea,
+#addtag .options_group .form-field textarea {
+	max-width:500px;
+	width:95%;
+	float:none !important;
+	vertical-align:middle;
+}
+#edittag .options_group .form-field input[type="checkbox"],
+#addtag .options_group .form-field input[type="checkbox"] {
+	width:auto;
+}
+.wc-metaboxes-wrapper .wc-metabox .wcwar_tab h3 {
+	border-top:1px solid #ccc;
+	padding-left:0!important;
+	padding-top:15px!important;
+	padding-bottom:15px!important;
+}
+
+#wcwar_tab .paid_warranty_items.wcwar_metaboxes {
+	padding-left:12px;
+}
+.wcwar_tab .paid_warranty_items.wcwar_metaboxes .wcwar_metabox {
+	margin-right:0;
+}
+.wcwar_tab .paid_warranty_items.wcwar_metaboxes .options_group.grouping {
+	padding: 0 12px;
+}
+
+.wcwar_tab .paid_warranty_items.wcwar_metaboxes .wcwar_metabox .form-field input,
+.wcwar_tab .paid_warranty_items.wcwar_metaboxes .wcwar_metabox .form-field select,
+.wcwar_tab .paid_warranty_items.wcwar_metaboxes .wcwar_metabox .form-field textarea {
+	width:90%;
+	max-width:300px !important;
+	float:none !important;
+	vertical-align:middle;
+}
+.wcwar_tab .paid_warranty_items.wcwar_metaboxes .wcwar_metabox .form-field label {
+	float:left;
+	margin-right:10px;
+	width: 200px;
+	padding: 0;
+	vertical-align:middle;
+}
+.form-wrap #edittag p,
+.form-wrap #addtag p {
+	font-style:normal;
+}
+#edittag #wcwar_tab .form-field.wcwar_qp_without > em,
+#addtag #wcwar_tab .form-field.wcwar_qp_without > em {
+	display:inline-block;
+	clear:none;
+	margin-left:5px;
+}
+
+#edittag #wcwar_tab p {
+	margin:0 0 40px;
+}
+	#edittag #wcwar_tab p label {
+		font-weight:600;
+		margin-bottom:4px;
+	}
+	#edittag #wcwar_tab .form-field > em {
+		margin-bottom:4px;
+	}
+
+
+/*------------------------------------------------------------------
+[WC Order]
+-------------------------------------------------------------------*/
+
+.wcwar_badge {
+	display:inline-block;
+	padding:0 5px;
+	border-radius:3px;
+	color:#fff;
+	font-size:9px;
+	line-height:26px;
+	vertical-align:middle;
+	text-decoration:none;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	margin-right:3px;
+}
+
+	a.wcwar_badge:hover {
+		color:#fff;
+	}
+	a.wcwar_badge.warranty_button:hover {
+		color:inherit;
+	}
+
+	.wcwar_badge.in_warranty {
+		background-color:#3f9f44;
+	}
+	.wcwar_badge.warranty_new {
+		background-color:#e43d1d;
+	}
+	.wcwar_badge.warranty_processing {
+		background-color:#f2ca0b;
+	}
+	.wcwar_badge.warranty_completed,
+	.wcwar_badge.war_send {
+		background-color:#217fbe;
+	}
+	.wcwar_badge.warranty_button,
+	.wcwar_badge.warranty_nowar,
+	.wcwar_badge.warranty_notrequested,
+	.wcwar_badge.warranty_rejected,
+	.wcwar_badge.warranty_expired,
+	.wcwar_badge.wcwar_label {
+		background-color:#dfd8d4;
+		color:inherit;
+	}
+	.wcwar_badge.warranty_button {
+		font-size:16px;
+		line-height:24px;
+	}
+	.wcwar_badge.warranty_only {
+		background-color:#70b5e5;
+	}
+	.wcwar_badge.return_only {
+		background-color:#9bce84;
+	}
+	.wcwar_badge.war_load,
+	.wcwar_badge.war_save,
+	.wcwar_badge.war_delete {
+		background-color:#a8968a;
+	}
+	.wcwar_badge.war_load,
+	.wcwar_badge.war_save,
+	.wcwar_badge.war_delete,
+	.wcwar_badge.war_send {
+		margin-right:0;
+	}
+
+span.wcwar_badge_war {
+	display:inline-block;
+	font-size:9px;
+	vertical-align:middle;
+	text-decoration:none;
+	white-space:nowrap;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+th.wcwar_warranty_item {
+	width:13.66%;
+}
+th.wcwar_warranty_status {
+	width:13.66%;
+}
+
+#war-request .inside {
+	padding:0;
+	margin-top:12px;
+}
+	#war-request .wcwar_requested {
+		background-color:#f8f8f8;
+	}
+	#war-request .wcwar_badge_parent,
+	#war-request .wcwar_meta_order {
+		display:inline-block;
+		background-color:#eee;
+		padding:18px;
+		font-size:18px;
+		vertical-align:middle;
+	}
+		#war-request .wcwar_badge_parent span.wcwar_badge,
+		#war-request .wcwar_meta_order a {
+			margin-left:12px;
+		}
+	#war-request .wcwar_email {
+		clear:both;
+		margin-top:10px !important;
+	}
+		#war-request .wcwar_email textarea {
+			display:block;
+			width:100%;
+			height:200px;
+			padding:5px;
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+		#war-request .wcwar_email small {
+			display:block;
+			margin-bottom:5px;
+		}
+
+	#war-request .inside .woocommerce_order_items_wrapper {
+		overflow:visible;
+	}
+		#war-request .inside .woocommerce_order_items_wrapper > p {
+			padding:0 12px 12px;
+			margin:0;
+		}
+		#war-request .woocommerce_order_items_wrapper table.woocommerce_order_items thead th {
+			background-color:#eeeeee;
+		}
+	#war-request p.wcwar_warranty_details,
+	#war-request p.wcwar_warranty_status {
+		float:left;
+	}
+	#war-request .inside .woocommerce_order_items_wrapper > p.wcwar_warranty_status {
+		padding-left:0;
+	}
+
+
+/*------------------------------------------------------------------
+[WAR Change Status]
+-------------------------------------------------------------------*/
+
+#wcwar_change_status {
+	display:inline-block;
+	position:relative;
+	width:1px;
+	vertical-align:middle;
+}
+	#wcwar_change_status .wcwar_close {
+		position:absolute;
+		top:-4px;
+		right:-4px;
+		width:16px;
+		height:16px;
+		font-size:8px;
+		line-height:16px;
+		text-align:center;
+		border-radius:3px;
+		background-color:#444;
+	}
+	#wcwar_change_status:before {
+		content:'';
+		position:absolute;
+		top:-6px;
+		left:-12px;
+		border:6px solid transparent;
+		border-right-color:#222;
+	}
+	#wcwar_change_status ul {
+		position:absolute;
+		top:0;
+		left:0;
+		margin:0;
+		margin-top:-13px;
+		padding:12px 24px 12px 24px;
+		border-radius:3px;
+		background-color:#222;
+		color:#fff;
+		z-index:9999;
+	}
+	#wcwar_change_status ul li {
+		position:relative;
+		font-size:12px;
+		line-height:18px;
+		margin-bottom:0;
+		cursor:pointer;
+	}
+	#wcwar_change_status ul li.wcwar_selected:before {
+		position:absolute;
+		top:1px;
+		content:'\f005';
+		font-family:'wcwar';
+		margin-left:-18px;
+	}
+
+.post-type-wcwar_warranty_req #order_line_items > tr:only-child .view_warranty {
+	display:none;
+}
+
+.war_warranty #order_line_items .item {
+	position:relative;
+}
+	.war_warranty #order_line_items .item.not_active {
+		opacity:0.33;
+		transition: opacity 200ms;
+	}
+	.war_warranty #order_line_items .item.not_active:hover {
+		opacity:1;
+	}
+
+.post-type-wcwar_warranty_req #status {
+	width:20%;
+}
+.taxonomy-wcwar_warranty_pre .wcwar_metaboxes {
+	margin-bottom:10px;
+}
+	.taxonomy-wcwar_warranty_pre .wcwar_metabox {
+		padding:12px 18px;
+	}
+	.taxonomy-wcwar_warranty_pre #wcwar_tab select {
+		min-width:300px;
+	}
+	.taxonomy-wcwar_warranty_pre .column-description > * {
+		display:none;
+	}
+	.taxonomy-wcwar_warranty_pre .wcwar-field label {
+		display:block;
+	}
+	.taxonomy-wcwar_warranty_pre .wcwar-field input {
+		max-width:300px;
+	}
+	.taxonomy-wcwar_warranty_pre .wcwar-field textarea {
+		max-width:600px;
+	}
+
+#tagsdiv-wcwar_warranty_pre {
+	display:none;
+}
+
+/* Fix */
+body.wp-admin select {
+	line-height: normal;
+	height: auto;
+}

@@ -1,0 +1,140 @@
+/*------------------------------------------------------------------
+[WooCommerce Warranties and Returns MYACCOUNT.CSS - My Account Page]
+
+[Table of contents]
+
+1. General
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[1. General]
+-------------------------------------------------------------------*/
+
+.wcwar_warranty .wcwar_block_wrap:before,
+.wcwar_warranty .wcwar_block_wrap:after {
+	content:'';
+	clear:both;
+	display:table;
+}
+.wcwar_warranty .wcwar_block_wrap,
+.wcwar_warranty .wcwar_block_wrap small {
+	display:block;
+}
+
+.wcwar_warranty {
+}
+	.wcwar_warranty tr {
+		padding:10px 0;
+	}
+
+	.wcwar_myaccount_warranty,
+	.wcwar_warranty .wcwar_description,
+	.wcwar_warranty .wcwar_status {
+		font-size:14px;
+		line-height:21px;
+		margin:0;
+	}
+		.wcwar_warranty table .wcwar_status {
+			display:inline-block;
+		}
+		.wcwar_warranty .wcwar_description .wcwar_block_wrap img {
+			float:left;
+			margin-right:10px;
+			width:auto;
+			height:42px;
+		}
+
+			.wcwar_warranty .wcwar_status.green {
+				color:#3f9f44;
+				border:1px solid #3f9f44;
+				border-radius:3px;
+				background-color:#d1edd2;
+				padding:5px;
+			}
+
+			.wcwar_warranty .wcwar_status.yellow {
+				color:#f2ca0b;
+				border:1px solid #f2ca0b;
+				border-radius:3px;
+				background-color:#fdf4cc;
+				padding:5px;
+			}
+
+			.wcwar_warranty .wcwar_status.blue {
+				color:#217fbe;
+				border:1px solid #217fbe;
+				border-radius:3px;
+				background-color:#d1e9f8;
+				padding:5px;
+			}
+
+			.wcwar_warranty .wcwar_status.grey {
+				display:inline-block;
+				color:#b9aaa2;
+				border:1px solid #b9aaa2;
+				border-radius:3px;
+				background-color:#f5f3f1;
+				padding:5px;
+			}
+
+.wcwar_warranty > .wcwar_status.blue {
+	padding:10px;
+	margin-bottom:20px;
+}
+
+.wcwar_warranty .wcwar_addonmsg {
+	margin-top:5px;
+	display:block;
+}
+
+.wcwar_warranty .wcwar_request_button {
+	margin:0!important;
+}
+
+.wcwar_warranty .wcwar_info_icon {
+	font-size:18px;
+	margin-right:6px;
+}
+.shop_table.wcwarranty input[type="number"] {
+	margin-left:10px;
+}
+.wcwar_warranty .wcwar_warranty_information {
+	display:block;
+}
+.shop_table.wcwarranty th:last-child {
+	text-align:right;
+}
+.shop_table.wcwarranty td .wcwar_status + br {
+	content:'';
+	display:block;
+	height:5px;
+	min-width:240px;
+}
+
+.wcwar_warranty .wcwar_myaccount_request {
+	text-align:right;
+}
+	.wcwar_warranty .wcwar_myaccount_request .button {
+		margin:5px 0 0!important;
+	}
+		.wcwar_warranty .wcwar_myaccount_request .button:after {
+			content:'';
+			display:block;
+		}
+		.wcwar_warranty .wcwar_myaccount_request .button:first-child {
+			margin-top:0!important;
+		}
+
+.wcwar_myaccount_product {
+	
+}
+.wcwar_myaccount_warranty {
+	min-width:240px;
+}
+.wcwar_myaccount_status {
+	min-width:240px;
+}
+	.wcwar_myaccount_status br:last-child {
+		display:none!important;
+	}
